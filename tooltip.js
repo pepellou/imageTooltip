@@ -7,6 +7,11 @@ $(function() {
             top: $(this).position().top + $(this).height(),
             left: $(this).position().left + 10
         });
+        for (var prop in $(this).data()) {
+            if (prop != "image") {
+                $(image).css(prop, $(this).data()[prop]);
+            }
+        };
         $(this).hover(
             function() { $(image).fadeIn(); },
             function() { $(image).fadeOut(); }
