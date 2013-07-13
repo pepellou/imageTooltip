@@ -21,3 +21,8 @@ How to use
 ```html
     <span class="tooltip" data-image="images/some-image.jpg">Place mouse here</span>
 ```
+
+4. If needed, you can add additional CSS properties to the image by adding them via data- attributes. Example:
+5. ```html
+    <span class="tooltip" data-image="images/some-image.jpg" data-width="50px" data-height="150px" data-border="10px solid black">Place mouse here</span>
+```
